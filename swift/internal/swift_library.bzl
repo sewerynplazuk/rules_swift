@@ -120,9 +120,9 @@ def _swift_library_impl(ctx):
     copts.extend(module_copts)
 
     extra_features = []
-    if ctx.attr._config_emit_swiftinterface[BuildSettingInfo].value:
+    # if ctx.attr._config_emit_swiftinterface[BuildSettingInfo].value:
         # extra_features.append(SWIFT_FEATURE_ENABLE_LIBRARY_EVOLUTION)
-        extra_features.append(SWIFT_FEATURE_EMIT_SWIFTINTERFACE)
+        # extra_features.append(SWIFT_FEATURE_EMIT_SWIFTINTERFACE)
 
     module_name = ctx.attr.module_name
     if not module_name:
